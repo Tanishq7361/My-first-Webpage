@@ -1,11 +1,6 @@
-alert("Welcome to my website");
-
 function myfunction(){
     alert("you clicked");
 }
-function mFunction() {
-    document.getElementById("hello").style.fontSize = "25px";         
-  }
   function imge(vl){
     var pic;
     if(vl==-1){
