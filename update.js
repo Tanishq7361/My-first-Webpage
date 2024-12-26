@@ -9,13 +9,13 @@ function mFunction() {
   function imge(vl){
     var pic;
     if(vl==-1){
-    pic="C:/Users/DELL/Pictures/Camera Roll/WIN_20241209_23_19_13_Pro.jpg"
+    pic="img/1.jpg"
     }
     if(vl==0){
-        pic="C:/Users/DELL/Pictures/Camera Roll/WIN_20241209_23_19_10_Pro.jpg"
+        pic="img/2.jpg"
     }
     if(vl==1){
-        pic="C:/Users/DELL/Pictures/Camera Roll/WIN_20241209_23_19_16_Pro.jpg"
+        pic="img/3.jpg"
     }
     document.getElementById('turn').src = pic;
 
