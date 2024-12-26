@@ -1,0 +1,88 @@
+body {
+    background-image: repeating-linear-gradient(
+      red,
+      orange,
+      yellow,
+      green,
+      blue,
+      cyan,
+      rgb(225, 2, 225)
+    );
+  
+    /*background-image: url("C:/Users/DELL/Pictures/Screenshots/Screenshot (2).png") ;*/
+    background-size: 100%;
+    color: black;
+    background-attachment: fixed;
+    /* background-repeat: no-repeat; */
+  }
+  p.helo {
+    border-style: inset;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 50px;
+  }
+  div.bye {
+    width: 300px;
+    background-color: aqua;
+  }
+  
+  .dsa {
+    background-color: #ef8b8b;
+    touch-action: pinch-zoom;
+  }
+  p {
+    font-family: cursive;
+    padding: 30px;
+  }
+  ol {
+    list-style-image: url('C:/Users/DELL/Desktop/pointol.jpeg');
+  }
+  ul {
+    list-style-image: url('C:/Users/DELL/Desktop/point.png');
+  }
+  ul li {
+    background: #454e58;
+    color: rgb(255, 255, 255);
+    margin: 5px;
+  }
+  a:link {
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 50px;
+  }
+  a:visited {
+    background-color: #f44336;
+    color: white;
+    text-decoration: solid;
+    padding: 5px 10px;
+    border-radius: 50px;
+  }
+  a:hover {
+    color: white;
+    background-color: red;
+    text-decoration: overline;
+    display: inline-block;
+    border-radius: 50px;
+  }
+  a:active {
+    color: white;
+    background-color: red;
+    text-decoration: underline;
+    display: inline-block;
+    border-radius: 50px;
+  }
+  
+  a.hell:link {
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 50px;
+  }
+  
