@@ -34,12 +34,6 @@ body {
     font-family: cursive;
     padding: 30px;
   }
-  ol {
-    list-style-image: url('C:/Users/DELL/Desktop/pointol.jpeg');
-  }
-  ul {
-    list-style-image: url('C:/Users/DELL/Desktop/point.png');
-  }
   ul li {
     background: #454e58;
     color: rgb(255, 255, 255);
