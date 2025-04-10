@@ -22,7 +22,8 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: #f7f7f7;
+  background-image: url('img/night1.jpg');
+  background-size: cover;
   font-family: "Poppins", sans-serif;
 }
 header{
@@ -37,7 +38,7 @@ header{
   justify-content: space-between;
   padding: 1.7rem 10%;
   height: 7rem;
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.334);
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
 }
 
@@ -104,7 +105,7 @@ header{
 .home .content h2 {
   font-size: 5rem;
   font-weight: 800;
-  color: #002057;
+  color: #0041b3;
 }
 .home .content h2 span {
   font-size: 5rem;
@@ -113,7 +114,7 @@ header{
 }
 .home .content p {
   font-size: 2.5rem;
-  color: #000;
+  color: #ffffff;
   font-weight: 600;
   padding: 2rem 0;
 }
