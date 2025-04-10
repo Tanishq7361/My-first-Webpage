@@ -1,76 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script src="update.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="img/crown.png" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>King-T</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOME</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="boxes">
+        <a href="#home">Home</a>
+      </div>
+      <div class="boxes">
+        <a href="#about">About</a>
+      </div>
+      <div class="boxes">
+        <a href="skill">Skills</a>
+      </div>
+      <div class="boxes">
+        <a href="edu">Education</a>
+      </div>
+      <div class="boxes">
+        <a href="exp">Experience</a>
+      </div>
+      <div class="boxes">
+        <a href="contc">Contact Me</a>
+      </div>
+    </div>
+  </header>
 
-  <body>
-    <div class="lilo">
-      <div class="header">
-        <div>
-          <div class="titlebar">
-            <div class="container" onclick="myFunction(this)">
-              <div class="bar1"></div>
-              <div class="bar2"></div>
-              <div class="bar3"></div>
-            </div>
-             <img src="img/crown.png" alt="King-T" class="helplo">
-            <a class="toplink" href="index.html"><i class="fa fa-home"></i></a>
-            <a class="toplink" href="current.html">Current</a>
-            <a class="toplink" href="capture.html">Capture</a>
-            <a class="toplink" href="about.html">About</a>
-          </div>
+  <section class="home" id="home">
+    <div id="particles-js"></div>
+    <div class="content">
+     <h2>Hi There,<br/> I am <span>Tanishq Shah</span></h2>
+     <p>i am a <span class="typing-text"></span></p>
+     <a href="#about" class="btn"><span>About Me</span>
+       <i class="fas fa-arrow-circle-down"></i>
+     </a>
+      <div class="social">
+        <div class="lists">
+          <div class="sicon"><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/jigar-sable/" target="_blank"><i class="fab fa-linkedin"></i></a></div> 
+          <div class="sicon"><a class="github" aria-label="GitHub" href="https://github.com/jigar-sable" target="_blank"><i class="fab fa-github"></i></a></div>
+          <div class="sicon"><a class="twitter" aria-label="Twitter" href="https://twitter.com/jigar_sable" target="_blank"><i class="fab fa-twitter"></i></a></div>
+          <div class="sicon"><a class="telegram" aria-label="Telegram" href="https://t.me/lifecode5" target="_blank"><i class="fab fa-telegram-plane"></i></a></div>
+          <div class="sicon"><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/jigarsable.dev"><i class="fab fa-instagram" target="_blank"></i></a></div>
         </div>
       </div>
-      
-      <p class="mono">
-        Hey guy's what's up I am Tanishq Shah and this is my first webpage , I
-        hope you find it easy to understand<br />
-        I have made 4 different windows for more details <br />
-      </p>
-      <p class="mono">
-        (Home) :<br />
-        I have explained what is in the website and what will be my future plans
-        and what more can be done in this webpage which i am unable to do right
-        now
-      </p>
-      <p class="mono">
-        (Current) :<br />
-        In this page i haven I have listed things which i am doing currently (on
-        progress work)
-      </p>
-      <h1>helo</h1>
-      <br />
-      <h1>helo</h1>
-      <br />
-      <h1>helo</h1>
-      <br />
-
-      <h1>helo</h1>
-      <br />
-      <h1>helo</h1>
-      <br />
-      <h1>helo</h1>
-      <br />
-
-      <h1>helo</h1>
     </div>
-    <div class="gilo">
-      <h1>helo</h1>
-      <br />
-      <h1>helo</h1>
-      <br />
-      <h1>helo</h1>
-      <br />
-    </div>
-  </body>
+<div class="image">
+    <img draggable="false" class="tilt" src="./img/WaxMuseum.jpg" alt="">
+</div>
+</section>
+<!-- for particles -->
+<script src="./js/particles.js"></script>
+<script src="./js/particlesinside.js"></script>
+</body>
 </html>

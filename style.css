@@ -1,132 +1,202 @@
-body{
-  background-color: rgba(255, 255, 153, 0.619);
-}
-.titlebar {
-  color: orange;
-  font-family: sans-serif;
-  font-size: 30px;
-}
-div.by {
-  text-align: center;
-  color: rgb(0, 0, 0);
-}
-.photo1{
-    width: 33.33%;
-    height: 40%;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    position: relative;
-    transition: ease;
-    transition-duration: 2s;
-}
-@keyframes example {
-  0%   {background-color:red; left:0px; top:0px;}
-  25%  {background-color:yellow; left:200px; top:0px;}
-  50%  {background-color:blue; left:200px; top:200px;}
-  75%  {background-color:green; left:0px; top:200px;}
-  100% {background-color:red; left:0px; top:0px;}
-}
-.photo1:hover{
-  width:50%;
-  height: 50%;
-}
-.photo2:hover{
-  width:50%;
-  height: 50%;
-}
-.photo2{
-  width: 100%;
-  height: 100%;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  position: relative;
-  transition: ease;
-  transition-duration: 2s;
-}
-img {
-  width: 100%;
-  height: 82%;
-}
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-.mono{
-  font-family: 'Copperplate Gothic';
-  font-size: larger;
-  background-color: #ffffffb2;
-  text-align: center;
-}
-.lilo{
-  background-image: url("img/natureblur2.jpg");
-  background-repeat: no-repeat;
-}
-.gilo{
-  background-image: url("img/natureblur3.jpg.crdownload");
-}
-a:link {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
 
-  padding: 5px 10px;
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  color: aliceblue;
+  box-sizing: border-box;
   text-decoration: none;
-  display: inline-block;
-  border-radius: 50px;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
 }
-a:visited {
-
-  text-decoration: solid;
-  padding: 5px 10px;
-  border-radius: 50px;
+section {
+  min-height: 100vh;
+  padding: 2rem 9%;
 }
-.header {
-  padding: 0px 15px;
-  background: #555;
-  color: #f1f1f1;
-  position: sticky;
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  background: #f7f7f7;
+  font-family: "Poppins", sans-serif;
+}
+header{
+  font-family: Nunito;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.7rem 10%;
+  height: 7rem;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
 }
-.toplink{
-  color: #f1f1f1;
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-right: 100px;
 }
-a:hover {
-  background-color: rgba(255, 252, 252, 0.138);
-  text-decoration: overline;
-  display: inline-block;
-  border-radius: 30px;
-  transition-duration: 0.5s;
+
+.boxes{
+  height: 5rem;
+  width: 7%;
+  background-color: rgb(145, 12, 12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-a:active {
-  text-decoration: overline;
-  display: inline-block;
-  border-radius: 50px;
+
+.home{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  min-height: 100vh;
+  align-items: center;
 }
-.helplo{
-  padding-left: 700px;
-  width: 45px;
-  height: 40px;
-  padding-right: 270px;
+.home #particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
-.container {
-  display: inline-block;
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.home .content {
+  flex: 1 1 40rem;
+  padding-top: 1rem;
+  z-index: 1;
+}
+.home .image {
+  flex: 1 1 40rem;
+  z-index: 1;
+}
+.home .image img {
+  width: 70%;
+  margin-left: 7rem;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
-.bar1, .bar2, .bar3 {
-  width: 30px;
-  height: 5px;
-  background-color: #ffffff;
-  margin: 5px 0;
+.home .image img:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  transform: scale(98%);
+}
+.home .content h2 {
+  font-size: 5rem;
+  font-weight: 800;
+  color: #002057;
+}
+.home .content h2 span {
+  font-size: 5rem;
+  font-weight: 800;
+  color: #ff7b00;
+}
+.home .content p {
+  font-size: 2.5rem;
+  color: #000;
+  font-weight: 600;
+  padding: 2rem 0;
+}
+.home .content p span {
+  font-size: 2.5rem;
+  color: rgb(148, 8, 8);
+  font-weight: 600;
+  padding: 2rem 0;
+}
+.home .btn {
+  margin-top: 1rem;
+  line-height: 0;
+  padding: 1.6rem 3rem;
+  border-radius: 4em;
   transition: 0.5s;
+  color: #fff;
+  background: #2506ad;
+  box-shadow: 0px 5px 18px rgba(48, 68, 247, 0.6);
+  font-family: "Nunito", sans-serif;
 }
-.change .bar1 {
-  transform: translate(0, 10px) rotate(-45deg);
+.home .btn span {
+  font-weight: 700;
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
 }
-.change .bar2 {opacity: 0;}
-.change .bar3 {
-  transform: translate(0, -10px) rotate(45deg);
+.home .btn i {
+  margin-left: 0.3rem;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+.home .btn:hover {
+  background: #251662;
+  scale: 50%;
+}
+.home .btn:hover i {
+  transform: translate3d(5px,5px,5px);
+}
+.social {
+  position: relative;
+  margin-top: 5rem;
+}
+.social .lists {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.social .lists .sicon {
+  display: inline-block;
+  margin-bottom: 14px;
+}
+.sicon a{
+  font-size: 2rem;
+  display: inline-block;
+  line-height: 44px;
+  color: #00d9ff;
+  background-color: #09011b;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.sicon a:active,
+.sicon a:focus,
+.sicon a:hover {
+  color: #942b2b;
+  scale: 95%;
+}
+.sicon a.github:hover {
+  background-color: #124104;
+}
+.sicon a.telegram:hover {
+  background-color: #27A7E7;
+}
+.lists a.twitter:hover {
+  background-color: #1D9BF0;
+}
+.lists a.linkedin:hover {
+  background-color: rgb(10, 102, 194);
+}
+.lists a.instagram:hover {
+  background-color: #C13584;
 }
