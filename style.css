@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
+@keyframes changer{
+  100%{
+      filter: hue-rotate(360deg);
+  }
+}
 
 *{
   padding: 0;
@@ -10,7 +15,7 @@
   outline: none;
   border: none;
   text-transform: capitalize;
-  transition: all 0.2s linear;
+  transition: all 0.4s linear;
 }
 section {
   min-height: 100vh;
@@ -22,7 +27,6 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-image: url('img/night1.jpg');
   background-size: cover;
   font-family: "Poppins", sans-serif;
 }
@@ -48,24 +52,34 @@ header{
   justify-content: right;
   align-items: center;
   padding-right: 100px;
+  font-size: 1.5rem;
 }
-
+.navbar :hover{
+  background-color: #ffffff22;
+  cursor: pointer;
+}
 .boxes{
   height: 5rem;
   width: 7%;
-  background-color: rgb(145, 12, 12);
   display: flex;
   align-items: center;
   justify-content: center;
+  /* border: 2px solid white; */
+  border-bottom: 2px solid #fff;
+  margin-left: 20px;
 }
-
+.boxes :hover{
+  background-color: transparent;
+}
 .home{
+  background-image: radial-gradient(circle at left, rgb(0, 0, 0) 0, rgb(3, 3, 90), rgb(28, 156, 176) 100%);
   position: relative;
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
   min-height: 100vh;
   align-items: center;
+  background-color: #0000007e;
 }
 .home #particles-js {
   position: absolute;
@@ -90,17 +104,23 @@ header{
 .home .image {
   flex: 1 1 40rem;
   z-index: 1;
+  /* mix-blend-mode:screen; */
+}
+.home .image :hover{
+  mix-blend-mode: normal;
 }
 .home .image img {
-  width: 70%;
+  width: 100%;
   margin-left: 7rem;
   border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
+
 .home .image img:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.625);
   transform: scale(98%);
+  mix-blend-mode: normal;
 }
 .home .content h2 {
   font-size: 5rem;
@@ -146,11 +166,12 @@ header{
   transition: 0.3s;
 }
 .home .btn:hover {
-  background: #251662;
+  background: #1e0971;
   scale: 50%;
 }
 .home .btn:hover i {
-  transform: translate3d(5px,5px,5px);
+  /* transform: translateY(5px); */
+  scale: 120%;
 }
 .social {
   position: relative;
@@ -184,7 +205,7 @@ header{
 .sicon a:focus,
 .sicon a:hover {
   color: #942b2b;
-  scale: 95%;
+  scale: 93%;
 }
 .sicon a.github:hover {
   background-color: #124104;
@@ -200,4 +221,136 @@ header{
 }
 .lists a.instagram:hover {
   background-color: #C13584;
+}
+
+@media (max-width: 450px) {
+  .home .btn {
+    margin: 4rem 0;
+  }
+  .social {
+    margin-top: 12rem;
+  }
+  .home .image img {
+    margin-top: -12rem;
+  }
+  .home .content p {
+    font-size: 2.2rem;
+  }
+  .home .content p span {
+    font-size: 2.2rem;
+  }
+}
+
+
+/* about section starts */
+.about {
+  background-image: radial-gradient(circle at left, rgb(165, 4, 4) 0, rgb(206, 91, 14), rgb(238, 255, 0) 100%);
+}
+.about .row {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 4rem;
+}
+.about .row .image {
+  text-align: center;
+  flex: 1 1 35rem;
+}
+.about .row .image img {
+  margin: 4rem;
+  width: 30rem;
+  height: auto;
+  border-radius: 5%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+  /* mix-blend-mode:screen; */
+  transition: 0.3s;
+  cursor: pointer;
+}
+.about .row .image img:hover {
+  mix-blend-mode: normal;
+}
+.about .row .content {
+  flex: 1 1 45rem;
+  padding: 3rem;
+}
+.about .row .content h3 {
+  color: rgb(250, 250, 250);
+  font-size: 2.5rem;
+}
+.about .row .content .tag {
+  font-size: 1.4rem;
+  color: #48065e;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+.about .row .content p {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  font-family: "Nunito";
+  font-weight: 600;
+  text-transform: none;
+  color: #000000;
+}
+.about .row .content .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  font-family: "Nunito";
+  font-weight: 600;
+}
+.about .row .content .box-container .box p {
+  text-transform: none;
+}
+.about .row .content .box-container .box p span {
+  color: #ffffff;
+}
+.resumebtn {
+  margin-top: 6rem;
+}
+.resumebtn .btn {
+  padding: 1.7rem 3rem;
+  border-radius: 0.5em;
+  transition: 0.3s;
+  color: #fff;
+  background: #2506ad;
+  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+  font-family: "Nunito", sans-serif;
+}
+.resumebtn .btn span {
+  font-weight: 600;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+}
+.resumebtn .btn i {
+  margin-left: 0.3rem;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+.resumebtn .btn:hover {
+  background: #1a047e;
+}
+.resumebtn .btn:hover i {
+  transform: translateX(5px);
+}
+
+@media screen and (max-width: 600px) {
+  .about .row .image {
+    margin-top: 2rem;
+  }
+  .about .row .image img {
+    margin: 0 auto;
+    width: 80%;
+    mix-blend-mode: normal;
+  }
+  .about .row {
+    padding: 0.5rem;
+    margin-bottom: 7rem;
+  }
+  .about .row .content {
+    padding: 1rem;
+  }
+  .about .row .content .box-container {
+    gap: 0;
+  }
 }
